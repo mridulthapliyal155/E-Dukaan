@@ -1,0 +1,142 @@
+h5{
+    font-weight: 300;
+}
+
+h2{
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+
+.Laptops{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.Laptops  img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.Mobiles{
+    margin-top: 10px;
+    text-align: center;
+}
+.Mobiles  img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+.Alexa  img{
+    width: 100%;
+    height: auto;
+}
+
+.Books{
+    margin-top: 10px;
+    text-align: center;
+}
+.Books  img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+.prime img{
+    width: 100%;
+    height: auto;
+}
+
+.audible img{
+    width: 100%;
+    
+}
+a:link,
+a:visited{
+    color:black;
+    font-size: 100%;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+a:hover,
+a:active{
+    color: #FF9900;
+    text-decoration: none;
+}
+.logo{
+    font-size: 100px;
+}
+
+.nav-link a{
+    font-size: 300%;
+}
+
+.copyright{
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+/* 
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel img{
+    width: 100%;
+}
+.carousel-cell.is-selected {
+}
+ */
+
+.cricket{
+    text-align: center;
+}
+
+.home{
+    text-align: center;
+}
+.pictures{
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+}
+.pictures img{
+    width: 100%;
+}
+
+
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+
+.myslideshow{
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width:320px){
+    a:link,
+    a:visited{
+        color:black;
+        font-size: 75%;
+}
+    h5{
+        font-size: 90%;
+    }
+}
+

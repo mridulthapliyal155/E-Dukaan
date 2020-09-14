@@ -10,11 +10,16 @@
 
   <title>E-dukaan</title>
 
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <!-- Custom styles for this template -->
+
   <link href="css/shop-homepage.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -23,18 +28,13 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">E-Dukaan</a>
+      <a class="navbar-brand" href="#" style="font-size: 100%;">E-Dukaan</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" target="_blank" href="https://www.amazon.in/tryprime?tag=apnidukaan07c-21;">Try Prime</a>
           </li>
 
@@ -43,47 +43,175 @@
     </div>
   </nav>
 
-  <!-- Page Content -->
-  <div class="container">
-    <div class="row">
-  
-      <div class="col">
+  <!-- Carousel  -->
+  <div id="carouselExampleIndicators" class="carousel slide mb-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <a href=""><img class="d-block img-fluid" src="images/slide1.jpg" alt="First slide"></a>
+      </div>
+      <div class="carousel-item">
+        <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=2e16c6546e89b3f21ae005984d0c4a53&camp=3638&creative=24630&index=aps&keywords=Vero moda"><img class="d-block img-fluid" src="images/slide2.jpg" alt="Second slide"></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.amazon.in/gp/product/B07PFFMP9P/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07PFFMP9P&linkCode=as2&tag=apnidukaan07c-21&linkId=8bde41591c06bf27c9781cedcb0d0f10"><img class="d-block img-fluid" src="images/slide3.jpg" alt="Third slide"></a>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <a href=""><img class="d-block img-fluid" src="images/slide1.jpg" alt="First slide"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="https://www.amazon.in/gp/product/B01MSCTR4A/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B01MSCTR4A&linkCode=as2&tag=apnidukaan07c-21&linkId=66211521023bb5f59601e42a8e3c5058"><img class="d-block img-fluid" src="images/slide2.jpg" alt="Second slide"></a>
-            </div>
-            <div class="carousel-item">
-              <a href="https://www.amazon.in/gp/product/B07PFFMP9P/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07PFFMP9P&linkCode=as2&tag=apnidukaan07c-21&linkId=8bde41591c06bf27c9781cedcb0d0f10"><img class="d-block img-fluid" src="images/slide3.jpg" alt="Third slide"></a>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+  <!-- Carousel End -->
+
+
+  <div class="container">
+    <!-- Deals -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 Laptops">
+          <img src="images/laptops.jpg" alt="Laptops">
+          <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=c2f8345b717b2a1ffd922eb81069cdde&camp=3638&creative=24630&index=computers&keywords=Laptops">Laptops</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
         </div>
 
-        <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4 Mobiles">
+          <img src="images/mobiles.jpg" alt="">
+          <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=ec9989b1694919e08555f3a067e9c928&camp=3638&creative=24630&index=aps&keywords=Mobiles">Mobiles</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+        </div>
+      
+
+          <div class="col-lg-4 col-md-6 mb-4 Books">
+          <img src="images/Books.jpg" alt="">
+          <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=58b0fa80756b3f775a94e62e90a33b7a&camp=3638&creative=24630&index=books&keywords=Books">Books</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+          </div>
+      </div>
+    <!-- Deals end -->
+
+
+    <!-- Alexa Prime Bounty  -->
+      <div class="row" >
+            <div class="col-lg-6 col-md-6 mb-4 Alexa">
+              <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=3cbd106618fde5d7303e3362337b1026&camp=3638&creative=24630&index=aps&keywords=Alexa"><img src="images/alexa.jpg" alt=""></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />  
+            </div>
+            <div class="col-lg-6 col-md-6 mb-4 prime">
+              <a href="https://www.amazon.in/tryprime?tag=apnidukaan07c-21;" target="_blank"><img src="images/prime.jpg" alt="Prime"></a>
+            </div>
+      </div>
+    <!--  Bounty End -->
+    
+    <!-- Audible Bounty -->
+      <div class="row" >
+        <div class="audible">
+          <div class="col-lg-12 col-md-6 mb-4">
+            <a href="https://www.amazon.in/dp/B077S5CVBQ/?ref=assoc_tag_sept19?actioncode=AINOTH066082819002X&tag=apnidukaan07c-21;"><img src="images/audible.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    <!-- Audible Bounty End -->
+
+    <!-- Cricket season  -->
+    
+    <div class="row">
+      <div class="col-lg-6 col-md-6 mb-4 cricket">
+        <div class="pictures">
+          <h2>Heyyy!! Cricket season is here</h2>
+          <div class="row">
+              <div class="col">
+                <img src="images/Cricket/cricket.jpg" alt="">
+
+                <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=9091fde8189c9d6743493001ddaf1cfe&camp=3638&creative=24630&index=sporting&keywords=Cricket Bats">Cricket Bats</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+              </div>
+              <div class="col">
+                <img src="images/Cricket/cricket kit.jpg" alt="">
+
+                <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=1044d0fd1199d2e3d195541932e922ca&camp=3638&creative=24630&index=sporting&keywords=Cricket Kits">Cricket Kit</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+
+              </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img src="images/Cricket/jersey.jpg" alt="">
+
+              <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=ce4f46c90300785dc3b956355a943c84&camp=3638&creative=24630&index=sporting&keywords=Cricket jersey">Clothing</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            </div>
+            <div class="col">
+              <img src="images/Cricket/cricket shoes.jpg" alt="">
+
+              <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=915cd9c9f42bce3fe6cd2514d6bd8df3&camp=3638&creative=24630&index=sporting&keywords=Cricket Shoes">Shoes</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-4 home">
+        <div class="pictures">
+          <h2>Work from home essentials</h2>
+          <div class="row">
+            <div class="col">
+              <img src="images/Laptops/laptops.jpg" alt="">
+
+              <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=4207648efc63dfb19e1935c8a1dc631c&camp=3638&creative=24630&index=sporting&keywords=Laptops">Laptops</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            </div>
+            
+            <div class="col">
+              <img src="images/Laptops/Router.jpg" alt="">
+
+              <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=8ec831a3eac1d9ce3b5b87e051bea776&camp=3638&creative=24630&index=sporting&keywords=Wifi modem">Routers</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <img src="images/Laptops/Keyboards.jpg" alt="">
+
+              <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=e754ce95d1d8b1f19182a770bc68b5aa&camp=3638&creative=24630&index=sporting&keywords=Keyboard pc">RGB Keyboards</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            </div>
+
+            <div class="col">
+              <img src="images/Laptops/Speakers.jpg" alt="">
+
+              <a target="_blank" href="https://www.amazon.in/gp/search?ie=UTF8&tag=apnidukaan07c-21&linkCode=ur2&linkId=ac0303b751690dc2c5ba37757085a5c1&camp=3638&creative=24630&index=aps&keywords=Headphones and speakers">Headphones and speakers</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=ur2&o=31" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="search" style="margin-bottom: 10px; margin-left: 10px;">
+      <script type="text/javascript">amzn_assoc_ad_type ="responsive_search_widget"; amzn_assoc_tracking_id ="apnidukaan07c-21"; amzn_assoc_marketplace ="amazon"; amzn_assoc_region ="IN"; amzn_assoc_placement =""; amzn_assoc_search_type = "search_widget";amzn_assoc_width ="auto"; amzn_assoc_height ="auto"; amzn_assoc_default_search_category =""; amzn_assoc_default_search_key ="";amzn_assoc_theme ="light"; amzn_assoc_bg_color ="FFFFFF"; </script><script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&Marketplace=IN"></script>
+    </div>
+
+
+  <footer>
+    <div class="row">
+      <div class="col" style="background-color: rgb(59, 59, 59);">
+        <p class="copyright">E-Dukaan &#169; All rights reserved</p>
+      </div>
+    </div>
+
+  </footer>
+  </div>
+
+
+    <!-- Product based carousel -->
+
+    <!-- 
+      <div class="row">
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
               <a target="_blank"  href="https://www.amazon.in/gp/product/B07X8V6TJF/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07X8V6TJF&linkCode=as2&tag=apnidukaan07c-21&linkId=b4a921d6a9d50a06e3d40d48d0a7c442"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B07X8V6TJF&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=apnidukaan07c-21" ></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=am2&o=31&a=B07X8V6TJF" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#"><a target="_blank" href="https://www.amazon.in/gp/product/B07X8V6TJF/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07X8V6TJF&linkCode=as2&tag=apnidukaan07c-21&linkId=b0725c6558b38b31ea3a45511b8b8888">Samsung Galaxy A51 (Black, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=am2&o=31&a=B07X8V6TJF" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></a>
+                  <a target="_blank" href="https://www.amazon.in/gp/product/B07X8V6TJF/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07X8V6TJF&linkCode=as2&tag=apnidukaan07c-21&linkId=b0725c6558b38b31ea3a45511b8b8888">Samsung Galaxy A51 (Black, 6GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers</a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=am2&o=31&a=B07X8V6TJF" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></a>
                 </h4>
                 <h5>₹ 23,990.00</h5> 
               </div>
@@ -137,6 +265,7 @@
               </div>
             </div>
           </div>
+          
 
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card h-100">
@@ -151,24 +280,51 @@
           </div>
 
         </div>
-        <!-- /.row -->
 
-      </div>
+        
+          <div class="row">
+            <div class="col-lg-12 col-md-6 mb-4 myslideshow"> 
+              <div class="carousel" data-flickity='{ "groupCells": true }'>
+                <div class="carousel-cell">
+                  <img src="images/SG bats.jpeg" alt="">
+                </div>
+                <div class="carousel-cell">
+                  <a target="_blank"  href="https://www.amazon.in/gp/product/B07VFJT152/ref=as_li_tl?ie=UTF8&camp=3638&creative=24630&creativeASIN=B07VFJT152&linkCode=as2&tag=apnidukaan07c-21&linkId=6df60812028f5919a16d19928928d04b"><img border="0" src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=IN&ASIN=B07VFJT152&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL160_&tag=apnidukaan07c-21" ></a><img src="//ir-in.amazon-adsystem.com/e/ir?t=apnidukaan07c-21&l=am2&o=31&a=B07VFJT152" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                </div>
+                <div class="carousel-cell">
+                </div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+                <div class="carousel-cell"></div>
+              </div>
+            </div>
+          </div>
+       -->
+        
+    </div>
+      
       <!-- /.col-lg-9 -->
-
-    </div>
+      
     <!-- /.row -->
-    <div class="search" style="margin-bottom: 10px; margin-left: 10px;">
-      <script type="text/javascript">amzn_assoc_ad_type ="responsive_search_widget"; amzn_assoc_tracking_id ="apnidukaan07c-21"; amzn_assoc_marketplace ="amazon"; amzn_assoc_region ="IN"; amzn_assoc_placement =""; amzn_assoc_search_type = "search_widget";amzn_assoc_width ="auto"; amzn_assoc_height ="auto"; amzn_assoc_default_search_category =""; amzn_assoc_default_search_key ="";amzn_assoc_theme ="light"; amzn_assoc_bg_color ="FFFFFF"; </script><script src="//z-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&Marketplace=IN"></script>
-    </div>
-  </div>
   <!-- /.container -->
+
 
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
+
+
+
+
+
 
 </html>
