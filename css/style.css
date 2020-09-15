@@ -115,6 +115,11 @@ a:active{
 }
 
 
+.carousel-item{
+    margin-top: 3px;
+}
+
+
 
 /* cell number */
 .carousel-cell:before {
